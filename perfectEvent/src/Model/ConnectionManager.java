@@ -24,8 +24,8 @@ public class ConnectionManager {
          try
          {  
         	Properties prop = new Properties();
-        	prop.load(new FileInputStream("/usr/share/tomcat6/webapps/perfectEvent/WEB-INF/config.properties"));
-        	 //prop.load(new FileInputStream("/Users/MaaBapa/Documents/workspace/perfectEvent/src/Model/config.properties"));
+        	//prop.load(new FileInputStream("/usr/share/tomcat6/webapps/perfectEvent/WEB-INF/config.properties"));
+        	prop.load(new FileInputStream("/Users/MaaBapa/Documents/workspace/perfectEvent/src/Model/config.properties"));
             con = DriverManager.getConnection(prop.getProperty("dbString")
                      + "user="+prop.getProperty("dbUser")+"&password="+prop.getProperty("dbPassword"));
              								
